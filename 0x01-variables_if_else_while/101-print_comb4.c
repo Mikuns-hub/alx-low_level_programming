@@ -3,7 +3,6 @@
  * main - The beginning
  * Return: 0 (Success)
  */
-
 int main(void)
 {
 	int single = '0';
