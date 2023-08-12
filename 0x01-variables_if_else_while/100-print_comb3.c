@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Program Entries
- * Reuturn: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(doubles);
 				putchar(single);
-				if (!(single =='9' && doubles == '8'))
+				if (!(single == '9' && doubles == '8'))
 				{
 					putchar(',');
 					putchar(' ');
