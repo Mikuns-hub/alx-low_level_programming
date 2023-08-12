@@ -15,13 +15,11 @@ int main(void)
 		{
 			for (single = '0'; single <= '9'; single++)
 			{
-				if (!((single == doubles) || (doubles == triples) || (doubles > single) || (triples > doubles)))
-				{
+				if (!((single == doubles) || (doubles == triples) || (doubles > single) || (triples > doubles))){
 					putchar(triples);
 					putchar(doubles);
 					putchar(single);
-					if (!(single == '9' && triples == '7' && doubles == '8'))
-					{
+					if (!(single == '9' && triples == '7' && doubles == '8')){
 						putchar(',');
 						putchar(' ');
 					}
