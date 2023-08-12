@@ -5,22 +5,22 @@
  */
 int main(void)
 {
-	int single = '0';
-	int doubles = '0';
-	int triple = '0';
+	int num1 = '0';
+	int num2 = '0';
+	int num3 = '0';
 
-	for (triple = '0'; triple <= '9'; triple++)
+	for (num3 = '0'; num3 <= '9'; num3++)
 	{
-		for (doubles = '0'; doubles <= '9'; doubles++)
+		for (num2 = '0'; num2 <= '9'; num2++)
 		{
-			for (single = '0'; single <= '9'; single++)
+			for (num1 = '0'; num1 <= '9'; num1++)
 			{
-				if (!((single == doubles) || (doubles == triple) || (doubles > single) || (triple > doubles)))
+				if (!((num1 == num2) || (num2 == num3) || (num2 > num1) || (num3 > num2)))
 				{
-					putchar(triple);
-					putchar(doubles);
-					putchar(single);
-					if (!(single == '9' && triple == '7' && doubles == '8'))
+					putchar(num3);
+					putchar(num2);
+					putchar(num1);
+					if (!(num1 == '9' && num3 == '7' && num2 == '8'))
 					{
 						putchar(',');
 						putchar(' ');
