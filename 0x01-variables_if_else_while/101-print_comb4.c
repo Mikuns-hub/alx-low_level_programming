@@ -7,19 +7,21 @@ int main(void)
 {
 	int single = '0';
 	int doubles = '0';
-	int triples = '0';
+	int triple = '0';
 
-	for (triples = '0'; triples <= '9'; triples++)
+	for (triple = '0'; triple <= '9'; triple++)
 	{
 		for (doubles = '0'; doubles <= '9'; doubles++)
 		{
 			for (single = '0'; single <= '9'; single++)
 			{
-				if (!((single == doubles) || (doubles == triples) || (doubles > single) || (triples > doubles))){
-					putchar(triples);
+				if (!((single == doubles) || (doubles == triple) || (doubles > single) || (triple > doubles)))
+				{
+					putchar(triple);
 					putchar(doubles);
 					putchar(single);
-					if (!(single == '9' && triples == '7' && doubles == '8')){
+					if (!(single == '9' && triple == '7' && doubles == '8'))
+					{
 						putchar(',');
 						putchar(' ');
 					}
