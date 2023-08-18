@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * main - print number from 1 - 100
@@ -11,29 +11,27 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (a % 3 == 0 && a % 5 != 0)
+		if (a % 3 == 0)
 		{
-			printf("Fizz");
+			printf(" Fizz");
 		}
-		else if (a % 5 == 0 && a % 3 != 0)
+		else if (a % 5 == 0)
 		{
-			printf("Buzz");
+			printf(" Buzz");
 		}
 		else if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (a == 1)
 		{
-			printf("%d", i);
+			printf("%d", a);
 		}
 		else
 		{
-			printf("%d", i)
+			printf(" %d", a);
 		}
 	}
 	printf("\n");
+	return (0);
 }
-
-
-
