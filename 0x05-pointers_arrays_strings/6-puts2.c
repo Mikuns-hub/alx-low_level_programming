@@ -1,11 +1,10 @@
 #include "main.h"
 
-/*
- * puts2 - print even numbers
- * @str: string to be printed
+/**
+ * puts2 - Prints the even numbers of a string starting with the first character
+ * @str: print the string
  * Return: void
  */
-
 void puts2(char *str)
 {
 	int i;
@@ -15,4 +14,5 @@ void puts2(char *str)
 		if (i % 2 == 0)
 			_putchar(str[i]);
 	}
+	_putchar('\n');
 }
